@@ -1,0 +1,18 @@
+.catalog:
+  name: "Microservice-Demo"
+  version: "v0"
+  description: "Containerised microservices-demo"
+  minimum_rancher_version: v1.6.0
+  questions:
+    - variable: 'MYSQL_ROOT_PASSWORD'
+      label: 'MYSQL_ROOT_PASSWORD'
+      description: "Specify a password for mysql database"
+      type: 'int'
+      default: 'ULsH7KFJfnGzzJef'
+      required: true
+    - variable: 'FRONTEND_PORT'
+      label: 'Frontend Port where you will find the webshop'
+      description: 'Webshop Frontend'
+      type: 'string'
+      default: '80'
+      required: true
