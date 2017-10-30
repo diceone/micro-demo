@@ -7,28 +7,28 @@
   questions:
     - variable: HAPROXY_SOURCE_PORT
       label: 'SOURCE_PORT'
-      required: 'true'
-      default: 80
+      required: true
+      default: "80"
       type: int
     - variable: HAPROXY_EXPOSE_PORT
       label: 'EXPOSE_PORT'
-      required: 'true'
-      default: 80
+      required: true
+      default: "80"
       type: int
     - variable: HAPROXY_TARGET_PORT
       label: 'TARGET_PORT'
-      required: 'true'
-      default: '80'
+      required: true
+      default: "80"
       type: int
     - variable: HAPROXY_PROTOCOL
       label: 'HAPROXY_PROTOCOL'
-      required: 'true'
-      default: 'http'
+      required: true
+      default: "http"
       type: string
     - variable: GLOBAL_SCHEDULING
       label: 'rancher global scheduling'
-      required: 'true'
-      default: 'true'
+      required: true
+      default: "true"
       type: enum
       options:
         - true
