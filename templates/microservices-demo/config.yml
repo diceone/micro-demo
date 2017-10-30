@@ -1,0 +1,5 @@
+name: microservices-demo
+description: |
+  Containerised Microservices-Demo
+version: v0
+category: Application
