@@ -1,0 +1,16 @@
+jenkins:
+  mem_limit: ${JENKINS_MEM_LIMIT}
+  image: public-registry.nexinto.com/nexinto/jenkins-otto-node:21
+  hostname: ${JENKINS_CONTAINER_HOSTNAME}
+  environment:
+    CONTENT: jenkins
+    JAVA_OPTS: -Dorg.apache.commons.jelly.tags.fmt.timeZone=Europe/Berlin -Duser.timezone=Europe/Berlin
+    TZ: Europe/Berlin
+  stdin_open: true
+  volumes:
+  - ${JENKINS_HOME_VOL}:/var/jenkins_home
+  mem_reservation: ${JENKINS_MEM_RESERVATION}
+  volume_driver: ${VOLUME_DRIVER}
+  labels:
+    io.rancher.container.pull_image: always
+    lb: ${LOADBALANCING}

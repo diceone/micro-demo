@@ -1,0 +1,8 @@
+---
+name: Nexinto Jenkins
+description: |
+  Provide a Jenkins CI/CD Server
+version: v0.1.0
+category: Buildtools
+labels:
+  io.rancher.certified: nexinto
