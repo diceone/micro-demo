@@ -8,11 +8,17 @@
       label: 'MYSQL_ROOT_PASSWORD'
       description: "Specify a password for mysql database"
       type: 'string'
-      default: 'ULsH7KFJfnGzzJef'
+      default: 'TOPS3CR3ET'
       required: true
     - variable: 'FRONTEND_PORT'
       label: 'Frontend Port where you will find the webshop'
       description: 'Webshop Frontend'
-      type: 'int'
+      type: 'string'
       default: '80'
+      required: true
+    - variable: 'TRAFFIK_PORT'
+      label: 'Traffik LB Port'
+      description: 'LB Frontend'
+      type: 'string'
+      default: '8080'
       required: true
