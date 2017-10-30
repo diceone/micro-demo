@@ -1,0 +1,8 @@
+loadbalancer:
+  image: rancher/lb-service-haproxy:v0.7.3
+  ports:
+  - ${HAPROXY_EXPOSE_PORT}:${HAPROXY_SOURCE_PORT}/tcp
+  labels:
+    io.rancher.container.agent.role: environmentAdmin
+    io.rancher.container.create_agent: 'true'
+    io.rancher.scheduler.global: ${GLOBAL_SCHEDULING}

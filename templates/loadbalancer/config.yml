@@ -1,0 +1,8 @@
+---
+name: Nexinto HAProxy Load Balancer
+description: |
+  Provide a central Load Balancer
+version: v0.1.0
+category: Load Balancing
+labels:
+  io.rancher.certified: nexinto
