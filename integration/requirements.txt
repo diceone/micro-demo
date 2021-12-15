@@ -1,4 +1,4 @@
-cattle==0.5.3
+cattle==0.5.4
 pyyaml==3.11
 
 flake8
