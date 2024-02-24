@@ -54,7 +54,7 @@ queue-master:
     - /var/run/docker.sock:/var/run/docker.sock
   restart: always
 rabbitmq:
-  image: rabbitmq:3.6.8
+  image: rabbitmq:3.13.0
   hostname: rabbitmq
   restart: always
 payment:
